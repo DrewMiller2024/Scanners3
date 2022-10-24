@@ -50,10 +50,36 @@ public class ScannerReadCSVFile
             scanner2.useDelimiter(",");
             
             while (scanner2.hasNext()) {
-            String[] str1 = new String[11];
-            str1 += scanner2.next();
+            String[] str1 = new String[10];
+            String[] str2 = new String[10];
+            String[] str3 = new String[10];
+            String[] str4 = new String[10];
+            int i = 0;
+            
+            if (i <= 10) {
+                str1[i] = scanner2.next();
+                System.out.println(str1);
+                i++;
+            }
+            if (i > 10 && i <= 20) {
+                str2[i - 11] = scanner2.next();
+                System.out.println(str2);
+                i++;
+            }
+            if (i > 20 && i <= 30) {
+                str2[i - 21] = scanner2.next();
+                System.out.println(str2);
+                i++;
+            }
+            if (i > 30 && i <= 40) {
+                str2[i - 31] = scanner2.next();
+                System.out.println(str2);
+                i++;
+            }
         }
-        
+            
+            
+            
         }
     }
 
